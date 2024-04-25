@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicineAI - Skin Disease Detection</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe; /* Changed background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff; /* Changed container background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 20px; /* Added margin */
+        }
+
+        button {
+            background-color: #4c56af; /* Changed button color */
+            color: #000000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(223, 216, 216, 0.1); /* Added box shadow */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Changed button hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/static/images/images.jpg" alt="MedicineAI Logo">
+        <div>
+            <button onclick="location.href='detect';">Start Detection</button>
+        </div>
+    </div>
+</body>
+
+</html>
